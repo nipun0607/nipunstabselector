@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+   justify-content: space-evenly;
+   gap: 50px;
+ background-color: cyan;
+}
+
+
+.tab-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 4%;
+   
+   
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+   margin-bottom: -20px;
+    width: 7.1rem;
+    margin-left: -10px;
+   
+    
+    
+    
+}
+
+.tab-button.active {
+   background: orangered;
+   height: 30px;
+   width: 7.1rem;
+   border-radius: 3px;
+   
+}
+
+
+.content {
+    /* border: 1px solid #3498db; */
+    height:400px;
+    padding: 20px;
+    width: 300px;
+    background:red;
+    height: 60vh;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.content-item {
+    display: none;
+}
+
+.content-item.active {
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    background: #333;
+    color: #dc4848;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+    z-index:1;
+}
